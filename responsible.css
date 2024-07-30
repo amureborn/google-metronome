@@ -1,0 +1,224 @@
+@media (max-width: 479px) {
+  body {
+    font-size: 15px;
+  }
+  .main_title {
+    font-size: 21px;
+  }
+  .text_block {
+    font-size: 15px;
+  }
+  .text_block ul li {
+    padding-left: 20px;
+  }
+  .text_block ul li:before {
+    left: 0;
+  }
+  header .logo {
+    width: 230px;
+  }
+  .metronome {
+    margin-bottom: 30px;
+  }
+  .metronome .block.fixed {
+    padding: 20px 15px;
+  }
+  .metronome .fullscreen {
+    margin-left: 10px;
+  }
+  .metronome .fullscreen button .icon {
+    margin-right: 8px;
+  }
+  .metronome .box {
+    padding: 18px 18px 26px;
+  }
+  .how_to {
+    margin-top: 30px;
+    padding: 30px 0;
+  }
+  .bpm_buttons .grid {
+    --items: 3;
+  }
+  .bpm_buttons .item {
+    display: block;
+  }
+  .features .grid {
+    --margin-bottom: 25px;
+  }
+  .features .subtitle {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  .rate {
+    padding: 30px 0;
+  }
+  .page_content .text_block h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .page_content .text_block {
+    font-size: 15px;
+  }
+  .page_content .text_block h3 {
+    font-size: 16px;
+  }
+  .error_page {
+    padding: 30px 0 50px;
+  }
+  .error_page .title {
+    font-size: 150px;
+    line-height: 115px;
+  }
+  .error_page .desc {
+    font-size: 26px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .main_title {
+    font-size: 27px;
+  }
+  .metronome .bpm .val {
+    font-size: 130px;
+    margin: 10px 0;
+  }
+  .bpm_buttons .grid {
+    --items: 5;
+  }
+  .breadcrumbs {
+    display: none;
+  }
+  .bpm_buttons .item:nth-child(n + 16) {
+    display: none;
+  }
+  .features .grid {
+    --items: 1;
+  }
+  .error_page .title {
+    font-size: 200px;
+    line-height: 150px;
+  }
+  .error_page .desc {
+    margin-top: 40px;
+  }
+  .metronome .fullscreen button:hover {
+    color: var(--color);
+  }
+  footer .bot .copy {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  footer .bot .sep.hidden_mob {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  header {
+    z-index: 99;
+    box-shadow: none;
+  }
+  header .cont {
+    height: 60px;
+  }
+  header .logo {
+    position: relative;
+    z-index: 20;
+  }
+  header .cont:before {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: var(--bg);
+    box-shadow: 0 0 20px rgb(0 0 0/5%);
+  }
+  header .wrap_block {
+    position: fixed;
+    z-index: 5;
+    top: 60px;
+    right: -220px;
+    overflow-y: auto;
+    width: 220px;
+    height: calc(100% - 60px);
+    transition: 0.2s linear;
+    opacity: 0;
+    background: var(--bg);
+    box-shadow: -20px 0 20px rgb(0 0 0/5%);
+  }
+  header .wrap_block.visible {
+    right: 0;
+    opacity: 1;
+  }
+  header .main_menu {
+    width: 100%;
+  }
+  header .main_menu .item {
+    display: block;
+    width: 100%;
+  }
+  header .main_menu .item:hover > a {
+    background: 0 0;
+  }
+  header .main_menu .item > a.active {
+    background: rgba(225, 100, 50, 0.05);
+  }
+  header .main_menu .item .dropdown {
+    position: relative;
+    display: none;
+    visibility: visible;
+    width: 100%;
+    transition: none;
+    opacity: 1;
+    border-radius: 0;
+    background: var(--bg2);
+    box-shadow: none;
+  }
+  header .main_menu .item .dropdown li a {
+    color: var(--color2);
+  }
+  header .lang {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  header .lang:hover .block {
+    background: 0 0;
+  }
+  header .lang .block.active {
+    background: rgba(225, 100, 50, 0.05);
+  }
+  header .lang .dropdown {
+    position: relative;
+    display: none;
+    visibility: visible;
+    width: 100%;
+    transition: none;
+    opacity: 1;
+    border-radius: 0;
+    background: var(--bg2);
+    box-shadow: none;
+  }
+  header .lang .dropdown ul li a {
+    color: var(--color2);
+  }
+  .mob_menu_link {
+    z-index: 15;
+    display: block;
+  }
+  .features .grid {
+    --margin-left: 30px;
+  }
+  .features .item .desc {
+    font-size: 15px;
+  }
+  .error_page {
+    padding: 50px 0;
+  }
+  .error_page .title {
+    font-size: 300px;
+    line-height: 220px;
+  }
+}
