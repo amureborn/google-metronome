@@ -1,0 +1,317 @@
+.unique-metrognome-container {
+    --color-bg: #1d1e22;
+    --color-text: #e6e6e6;
+    --color-face: #ecc4ab;
+    --color-hat: #357a46;
+    --color-beard: #e6e6e6;
+    --color-dot: #e6e6e6;
+    --radius: 360px;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    font-family: "Roboto Mono", monospace;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    text-transform: uppercase;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+body.light-theme .unique-metrognome-container {
+    --color-bg: #ffffff;
+    --color-text: #000000;
+    --color-beard: #000000;
+    --color-dot: #000000;
+}
+
+.unique-metrognome {
+    --size: 25vmin;
+    --deg: 15deg;
+    padding-bottom: calc(var(--size) / 2);
+    margin-block-end: calc(var(--size) / -2);
+    transform-origin: 50% 100%;
+    pointer-events: none;
+justify-content: center;
+    align-items: center;
+    display: grid;
+}
+
+.unique-gnome {
+    display: grid;
+    grid-template-areas: "gnome";
+    place-items: center;
+    inline-size: var(--size);
+    block-size: var(--size);
+    justify-content: center;
+    align-items: center;
+}
+
+.unique-gnome > * {
+    grid-area: gnome;
+    position: relative;
+}
+
+.unique-hat {
+    --s: calc(var(--size) / 1.25);
+    place-self: start center;
+    inset-block-start: calc(var(--size) / 8);
+    inline-size: var(--s);
+    block-size: var(--s);
+    background-color: var(--color-hat);
+    border-radius: calc(var(--size) / 10);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 100%, 0 25%);
+    transform: rotate(-45deg);
+}
+
+.unique-nose {
+    --s: calc(var(--size) / 4);
+    margin-top: -1vmin;
+    inline-size: var(--s);
+    block-size: var(--s);
+    background-color: var(--color-face);
+    border-radius: 50%;
+}
+
+.unique-beard {
+    --s: calc(var(--size) / 2);
+    margin-top: 4vmin;
+    place-self: end center;
+    display: flex;
+    align-items: flex-start;
+    inline-size: calc(var(--s) * 2);
+    block-size: var(--s);
+    background-color: var(--color-beard);
+    border-radius: var(--radius);
+    box-shadow: hsla(0 0% 0% / 0.075) 1vmin 1vmin 2vmin -0.5vmin;
+}
+
+.unique-stache {
+    --stache-offset: -3vmin;
+    margin-top: var(--stache-offset);
+    inline-size: 100%;
+    block-size: 50%;
+    background-color: inherit;
+    box-shadow: inherit;
+}
+
+.unique-stache.left {
+    margin-left: var(--stache-offset);
+    border-radius: var(--radius) 0 var(--radius) 0;
+    transform-origin: right top;
+}
+
+.unique-stache.right {
+    margin-right: var(--stache-offset);
+    border-radius: 0 var(--radius) 0 var(--radius);
+    transform-origin: left top;
+}
+
+.unique-mouth {
+    --s: calc(var(--size) / 10);
+    margin-top: calc(var(--size) / 2.5);
+    inline-size: var(--s);
+    block-size: calc(var(--s) / 2);
+    border-radius: var(--radius);
+    background-color: var(--color-bg);
+    transform-origin: center top;
+    transform: scale(0);
+}
+
+.unique-controls {
+    --gap: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--gap);
+    width: 100%;
+    max-width: 30rem;
+}
+
+.unique-controls > * {
+    flex: 1 0 calc(50% - var(--gap) * 2);
+}
+
+#unique-time-signature {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1.25rem;
+    font-family: "Roboto Mono", monospace;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    text-transform: uppercase;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-text);
+    border-radius: 0.25rem;
+    appearance: none;
+    cursor: pointer;
+}
+
+#unique-time-signature:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-text);
+}
+
+body.light-theme #unique-time-signature {
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-text);
+}
+
+#unique-time-signature option {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: "Roboto Mono", monospace;
+    text-transform: uppercase;
+}
+
+#unique-subdivision {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1.25rem;
+    font-family: "Roboto Mono", monospace;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    text-transform: uppercase;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-text);
+    border-radius: 0.25rem;
+    appearance: none;
+    cursor: pointer;
+}
+
+#unique-subdivision:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-text);
+}
+
+body.light-theme #unique-subdivision {
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-text);
+}
+
+#unique-subdivision option {
+    background-color: var(--color-bg);
+    color: var (--color-text);
+    font-family: "Roboto Mono", monospace;
+    text-transform: uppercase;
+}
+
+.unique-controls input[type="range"] {
+    flex-basis: 100%;
+}
+
+.unique-controls label {
+    padding: 0.5rem 0;
+}
+
+.unique-controls button {
+    padding: 0.5rem 1.25rem;
+    min-width: 8.75rem;
+    font: inherit;
+    color: inherit;
+    text-transform: inherit;
+    background: transparent;
+    border: 1px solid var(--color-text);
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+
+.unique-controls input[type="range"] {
+    --thumb-size: 18px;
+    --thumb-offset: -8px;
+    --track-height: 1px;
+    -webkit-appearance: none;
+    background-color: transparent;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+.unique-controls input[type="range"]::-webkit-slider-runnable-track {
+    height: var(--track-height);
+    background: var(--color-text);
+    border: none;
+    cursor: pointer;
+}
+
+.unique-controls input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    margin-top: var(--thumb-offset);
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-text);
+    cursor: grab;
+}
+
+.unique-controls input[type="range"]:active::-webkit-slider-thumb {
+    cursor: grabbing;
+}
+
+.unique-controls input[type="range"]::-moz-range-track {
+    background-color: var(--color-primary);
+    height: var(--track-height);
+    border: none;
+    cursor: pointer;
+}
+
+.unique-controls input[type="range"]::-moz-range-thumb {
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-text);
+    cursor: grab;
+}
+
+.unique-controls input[type="range"]:active::-moz-range-thumb {
+    cursor: grabbing;
+}
+
+.unique-beat-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.unique-beat-dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: var(--color-dot);
+}
+
+.unique-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .unique-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .unique-left, .unique-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .unique-powered {
+        margin-bottom: 0;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .unique-right {
+        max-width: 30rem;
+    }
+}
