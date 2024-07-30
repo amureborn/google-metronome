@@ -11,9 +11,13 @@ Roblox Unblocked is available in the [Chrome Web Store](https://chrome.google.co
 # Features:
 
 ► Adjustable Tempo: Set the tempo anywhere from slow to fast, with a range of 20-240 BPM. Use the "Tap Tempo" feature to find your ideal beat.
+
 ► Play and Stop: Start and stop the metronome easily with a single click on the "Play" button.
+
 ► Time Signature: Customize the time signature to suit your needs, from common time (4/4) to more complex signatures.
+
 ► Subdivision Options: Choose from various subdivisions, such as quarter notes, eighth notes, and more, to fit your practice requirements.
+
 ► Light Mode/Dark Mode: Switch between light and dark themes for comfortable use in any lighting.
 
 One cool thing is that this Roblox Unblocked VPN Extension is free, and you don't need to log in or sign up to use the services.
