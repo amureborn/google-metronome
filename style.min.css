@@ -395,7 +395,6 @@ html.dark .checkbox input[type="checkbox"]:checked + .check_text:before {
   transition: 0.2s linear;
 }
 .theme_mode .label_check {
-  color: var(--color);
   font-size: 14px;
   line-height: 22px;
   display: table-cell;
