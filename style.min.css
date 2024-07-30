@@ -83,7 +83,6 @@ input[type="number"]:hover {
   --color2: #21232f;
 }
 html.dark:root {
-  --color: #d8daee;
   --bg: #313448;
   --color2: #fff;
 }
