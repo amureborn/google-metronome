@@ -2,7 +2,7 @@
 
 Use this simple metronome tool to keep a steady beat while you practice music. Set the BPM, pick your time signature and subdivision, and click 'Play' to start. You can also use the 'Tap Tempo' button to find the right BPM. Switch between light and dark modes for your favorite look. Enjoy easy and accurate practice. Powered by [PreppHint.com](https://PreppHint.com/).
 
-Check Demo On The [PreppHint.com](https://PreppHint.com/)
+Demo: [Online Metronome]([https://PreppHint.com/](https://prepphint.com/online-metronome/))
 
 ![Online Metronome](https://github.com/user-attachments/assets/6bd2fe60-ab64-4c38-bf7d-b4c4aea79044)
 
