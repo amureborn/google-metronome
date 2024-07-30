@@ -4,9 +4,9 @@ Use this simple metronome tool to keep a steady beat while you practice music. S
 
 Roblox Unblocked is available in the [Chrome Web Store](https://chrome.google.com/webstore/detail/roblox-unblocked/eldafnahjlecijacdkbaoaodclagkchc)
 
-## What Will Our Chrome Extension Look Like?
+## What Will Our Metronome Look Like?
 
-![Roblox Unblocked VPN](https://github.com/TechnoMare/Roblox-Unblocked/assets/96228020/fdaa2de5-0687-413d-8b8c-428df1d62686)
+![Online Metronome](https://github.com/user-attachments/assets/6bd2fe60-ab64-4c38-bf7d-b4c4aea79044)
 
 # Key Features:
 
