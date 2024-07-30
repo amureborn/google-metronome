@@ -16,4 +16,4 @@ Demo: [Online Metronome](https://prepphint.com/online-metronome/)
 
 * Light Mode/Dark Mode: Switch between light and dark themes for comfortable use in any lighting.
 
-One cool thing is that this Roblox Unblocked VPN Extension is free, and you don't need to log in or sign up to use the services.
+Upgrade your practice sessions with our versatile and easy-to-use online metronome tool. Install now and keep perfect time with every beat!
