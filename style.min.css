@@ -434,7 +434,7 @@ html.dark .checkbox input[type="checkbox"]:checked + .check_text:before {
   background: #fff;
 }
 .theme_mode input[type="checkbox"]:checked + .check_text {
-  color: #d8daee;
+  color: #000;
 }
 .theme_mode input[type="checkbox"]:checked + .check_text:before {
   background: #a3a7c3;
@@ -864,7 +864,6 @@ footer .logo img {
   margin-left: 30px;
 }
 .metronome .fullscreen button {
-  color: var(--color);
   font-family: var(--font_family);
   font-size: 15px;
   cursor: pointer;
