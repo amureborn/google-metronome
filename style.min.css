@@ -83,7 +83,9 @@ input[type="number"]:hover {
   --color2: #21232f;
 }
 html.dark:root {
+  --color: #d8daee;
   --bg: #313448;
+  --bg2: #282b3e;
   --color2: #fff;
 }
 .clear {
@@ -120,6 +122,9 @@ body {
 }
 .cont {
   width: 100%;
+  max-width: 1013px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 .compensate-for-scrollbar {
   margin-right: var(--scroll_width) !important;
@@ -392,6 +397,7 @@ html.dark .checkbox input[type="checkbox"]:checked + .check_text:before {
   transition: 0.2s linear;
 }
 .theme_mode .label_check {
+  color: var(--color);
   font-size: 14px;
   line-height: 22px;
   display: table-cell;
@@ -429,7 +435,7 @@ html.dark .checkbox input[type="checkbox"]:checked + .check_text:before {
   background: #fff;
 }
 .theme_mode input[type="checkbox"]:checked + .check_text {
-  color: #000;
+  color: #d8daee;
 }
 .theme_mode input[type="checkbox"]:checked + .check_text:before {
   background: #a3a7c3;
@@ -859,6 +865,7 @@ footer .logo img {
   margin-left: 30px;
 }
 .metronome .fullscreen button {
+  color: var(--color);
   font-family: var(--font_family);
   font-size: 15px;
   cursor: pointer;
@@ -1429,7 +1436,7 @@ input.hidden[type="radio"] + label {
   margin: 5px auto;
   cursor: pointer;
   background: #fff;
-  border-radius: 10%;
+  border-radius: 100%;
 }
 input.hidden[type="radio"] + label img {
   max-width: 100%;
