@@ -120,8 +120,6 @@ body {
 }
 .cont {
   width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 .compensate-for-scrollbar {
   margin-right: var(--scroll_width) !important;
